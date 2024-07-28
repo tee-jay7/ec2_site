@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> | Details | </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/lg.svg" alt="Image of John Sam" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="projects.html" class="nav-link"> projects </a>
+          <a href="certs.html" class="nav-link"> certifications </a>
+          <a href="blogs.html" class="nav-link"> blogs </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="project-page">
+        <section class="project-hero">
+          <img src="./assets/projects/p2.png" class="img project-hero-img" />
+          <article class="project-info">
+            <h2>Deploying a Static Website Using S3 Bucket</h2>
+            <p>
+              In this project, you'll learn how to host a static website using an AWS S3 bucket. This method eliminates the need to manage a server, allowing you to focus on your website's content and design. By using Infrastructure as Code (IaC) with AWS SAM (Serverless Application Model), we will streamline the setup and deployment process, making it easier to implement a CI/CD pipeline. This approach is ideal for maintaining efficiency and adhering to industry standards.
+            </p>
+            <div class="project-icons">
+              <article>
+                <i class="fab fa-github"></i>
+                <h5>Github link</h5>
+                <p>github.com</p>
+              </article>
+              <article>
+                <i class="fas fa-globe"></i>
+                <h5>Portfolio link</h5>
+                <p>john.twasam</p>
+              </article>
+              <article>
+                <i class="fas fa-trophy"></i>
+                <h5>Challenge link</h5>
+                <p>https://cloudresumechallenge.dev/</p>
+              </article>
+            </div>
+            <p class="project-tags">
+              Technologies: <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="project-content">
+          <article>
+            <h4>Instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 1: Static Website</p>
+                <div></div>
+              </header>
+              <p>
+                The resume website needs to be built using HTML, CSS, and Vanilla JavaScript.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 2: Create Your S3 Bucket</p>
+                <div></div>
+              </header>
+              <p>
+                You can create your bucket using the AWS console, the CLI, or by provisioning it through code. In my case, I used the AWS Serverless Application Model (SAM).
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Configure Permissions and Enable Static Hosting</p>
+                <div></div>
+              </header>
+              <p>
+                After the bucket has been created, you need to enable public access to it in the permissions tab or during creation. Create a bucket policy to enable public read access, and then enable static hosting for the bucket.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Upload Website Assets</p>
+                <div></div>
+              </header>
+              <p>
+                Website files can be uploaded to the bucket either through the AWS console or CLI. If you have set up a CI/CD pipeline, the content will be uploaded automatically.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 5: Visit the URL</p>
+                <div></div>
+              </header>
+              <p>
+                Visit the URL provided when you enabled static website hosting on the bucket.
+              </p>
+            </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Concepts</h4>
+              <p class="single-ingredient">IAM</p>
+              <p class="single-ingredient">Bucket Policy and Permissions</p>
+            </div>
+            <div>
+              <h4>Services</h4>
+              <p class="single-tool">S3 Bucket</p>
+              <p class="single-tool">IAM</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">John.Twasam</span>
+        <a href="#"></a>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
