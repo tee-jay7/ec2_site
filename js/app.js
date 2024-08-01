@@ -9,7 +9,7 @@ const getElement = (selector) => {
 
 const getViewsfromDb = async () => {
   try {
-    const results = await fetch('https://1ockk7b00c.execute-api.eu-west-1.amazonaws.com/Prod/visits');
+    const results = await fetch('https://zn2vm49ea6.execute-api.eu-west-1.amazonaws.com/Prod/visits');
     
     if (!results.ok) {
       throw new Error(`HTTP error! status: ${results.status}`);
@@ -20,7 +20,7 @@ const getViewsfromDb = async () => {
     views.textContent = `This site has been visited ${updated_value} times 🚀`;
   } catch (error) {
     console.error('Error fetching data:', error);
-    views.textContent = 'Error fetching view count 😓⛑️';
+    views.textContent = 'Error fetching view count ⛑️😓';
   }
 };
 
